@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: incident-service-quarkus-bc3i
+  namespace: rhn-sa-sshaaf-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload:rhn-sa-sshaaf-tenant-incident-service-quarkus-bc3i
+        name: my-java-quarkus
+        resources: {}
+status: {}
