@@ -1,0 +1,15 @@
+apiVersion: pipelinesascode.tekton.dev/v1alpha1
+kind: Repository
+metadata:
+  annotations:
+    appstudio.openshift.io/application: erdemo
+    appstudio.openshift.io/component: incident-service-quarkus-bc3i
+    build.appstudio.openshift.io/build: "true"
+    build.appstudio.openshift.io/type: build
+    build.appstudio.openshift.io/version: "0.1"
+    pipelines.appstudio.openshift.io/type: build
+  creationTimestamp: null
+  name: incident-service-quarkus-bc3i
+  namespace: rhn-sa-sshaaf-tenant
+spec:
+  url: https://github.com/sshaaf/incident-service-quarkus
