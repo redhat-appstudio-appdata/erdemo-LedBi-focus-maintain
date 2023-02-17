@@ -28,7 +28,7 @@ spec:
       - env:
         - name: MAPBOX_TOKEN
           value: pk.eyJ1Ijoic3NoYWFmIiwiYSI6ImNsOHN2bmUwczAxNWszb3FyZmo1cTRob3cifQ.r0fQUumuAM773uUKnHMHyQ
-        image: quay.io/redhat-appstudio/user-workload:rhn-sa-sshaaf-tenant-devfile-sample-hvvz
+        image: quay.io/redhat-appstudio/user-workload@sha256:919c6e17bc67f9a41b64cae16c06e7948702f71c5629ee800a5cc9e6c8587073
         name: my-nodejs
         ports:
         - containerPort: 3001
