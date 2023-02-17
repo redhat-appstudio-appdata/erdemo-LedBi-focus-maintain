@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-hvvz
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-hvvz
+    app.kubernetes.io/part-of: erdemo
+  name: devfile-sample-hvvz
+  namespace: rhn-sa-sshaaf-tenant
+spec:
+  ports:
+  - port: 3001
+    targetPort: 3001
+  selector:
+    app.kubernetes.io/instance: devfile-sample-hvvz
+status:
+  loadBalancer: {}
