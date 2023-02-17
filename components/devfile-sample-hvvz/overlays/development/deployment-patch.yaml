@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-hvvz
+  namespace: rhn-sa-sshaaf-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:919c6e17bc67f9a41b64cae16c06e7948702f71c5629ee800a5cc9e6c8587073
+        name: my-nodejs
+        resources: {}
+status: {}
