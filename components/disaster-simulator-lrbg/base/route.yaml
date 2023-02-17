@@ -1,0 +1,21 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: disaster-simulator-lrbg
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: disaster-simulator-lrbg
+    app.kubernetes.io/part-of: erdemo
+  name: disaster-simulator-lrbg
+  namespace: rhn-sa-sshaaf-tenant
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: disaster-simulator-lrbg
+    weight: null
+status: {}
